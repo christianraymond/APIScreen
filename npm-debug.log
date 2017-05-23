@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'htt-sever' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'htt-sever', null ]
+7 verbose cache add spec htt-sever
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'htt-sever',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'htt-sever',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed htt-sever@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for htt-sever
+11 info addNameTag [ 'htt-sever', 'latest' ]
+12 silly mapToRegistry name htt-sever
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/htt-sever
+16 verbose addNameTag registry:https://registry.npmjs.org/htt-sever not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/htt-sever
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:36:51 AM
+20 verbose request id 75d348e9fab1c6a6
+21 http request GET https://registry.npmjs.org/htt-sever
+22 http 404 https://registry.npmjs.org/htt-sever
+23 verbose headers { 'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=0',
+23 verbose headers   'content-length': '2',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 23 May 2017 07:36:53 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-jnb7520-JNB',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1495525012.586653,VS0,VE1468',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 404,
+24 silly get   { 'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=0',
+24 silly get     'content-length': '2',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 23 May 2017 07:36:53 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-jnb7520-JNB',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1495525012.586653,VS0,VE1468',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/htt-sever
+25 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+25 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+25 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+25 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+25 verbose stack     at emitTwo (events.js:87:13)
+25 verbose stack     at Request.emit (events.js:172:7)
+25 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+25 verbose stack     at emitOne (events.js:82:20)
+25 verbose stack     at Request.emit (events.js:169:7)
+25 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+26 verbose statusCode 404
+27 verbose pkgid htt-sever
+28 verbose cwd /home/bootcamp/projects/myScreen
+29 error Linux 4.4.0-47-generic
+30 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "htt-sever"
+31 error node v4.2.6
+32 error npm  v2.14.12
+33 error code E404
+34 error 404 Registry returned 404 for GET on https://registry.npmjs.org/htt-sever
+34 error 404
+34 error 404 'htt-sever' is not in the npm registry.
+34 error 404 You should bug the author to publish it (or use the name yourself!)
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, http url, or git url.
+35 verbose exit [ 1, true ]
